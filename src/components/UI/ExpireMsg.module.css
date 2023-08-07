@@ -1,0 +1,87 @@
+.expireMsg {
+    width: 50%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 2rem;
+    font-size: 1.2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.expireMsg h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 2.5rem;
+    color: var(--color-font-1);
+}
+
+.expireMsg p {
+    font-size: 1.1rem;
+    margin-top: 10px;
+    margin-bottom: 0;
+    color: var(--color-font-1);
+}
+
+.expireMsg.error p {
+    color: var(--color-font-2);
+}
+
+.expireMsg.success p {
+    color: #4361ee;
+}
+
+.expireMsg button {
+    background-color: var(--color-box-1);
+    border: none;
+    border-radius: 8px;
+    padding: .4rem 1.5rem;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color .3s ease;
+}
+
+.expireMsg button:hover,
+.expireMsg button:active {
+    background-color: #e41e2e;
+}
+
+.expireMsg button a {
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (max-width: 767px) {
+    /* mobile */
+    .expireMsg h2 {
+        font-size: 3.5rem;
+    }
+    
+    .expireMsg p {
+        font-size: 1.8rem;
+    }
+
+    .expireMsg button {
+        padding: 1.5rem 4.5rem;
+        font-size: 1.8rem;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    /* tablet */
+    .expireMsg p {
+        font-size: 1.5rem;
+    }
+
+    .expireMsg button {
+        padding: 1rem 4.5rem;
+        font-size: 1.6rem;
+        margin-top: 20px;
+    }
+}
+

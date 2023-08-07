@@ -1,0 +1,96 @@
+.loginMsg {
+    width: 50%;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 2rem;
+    font-size: 1.2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginMsg h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 2rem;
+    color: var(--color-font-1);
+}
+
+.loginMsg p {
+    font-size: 1rem;
+    margin-top: 10px;
+    margin-bottom: 0;
+    color: var(--color-font-1);
+}
+
+.loginMsg.error p {
+    color: var(--color-font-2);
+}
+
+.loginMsg.success p {
+    color: #4361ee;
+}
+
+#loginBtn {
+    background-color: var(--color-box-1);
+    border: none;
+    border-radius: 8px;
+    padding: .4rem 1.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color .3s ease;
+    color: white;
+}
+
+#loginBtn:hover,
+#loginBtn:active {
+    background-color: #e41e2e;
+}
+
+@media screen and (max-width: 767px) {
+    /* mobile */
+    .loginMsg {
+        width: 80vw;
+        margin-top: 20px;
+    }
+    
+    .loginMsg h2 {
+        font-size: 2rem;
+    }
+
+    .loginMsg p {
+        font-size: 1.1rem;
+    }
+
+    #loginBtn {
+        padding: 1rem 3rem;
+        font-size: 1.2rem;
+        margin-top: 30px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    /* tablet */
+    .loginMsg {
+        width: 80vw;
+    }
+    
+    .loginMsg h2 {
+        font-size: 3rem;
+    }
+
+    .loginMsg p {
+        font-size: 2rem;
+    }
+
+    #loginBtn {
+        padding: 1rem 4rem;
+        font-size: 1.8rem;
+        margin-top: 30px;
+    }
+}
+

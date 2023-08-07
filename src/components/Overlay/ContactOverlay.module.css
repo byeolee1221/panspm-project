@@ -1,0 +1,126 @@
+.overlay_box {
+    position: fixed;
+    text-align: center;
+    background-color: white;
+    width: 40%;
+    margin: auto;
+    padding: 1rem;
+    z-index: 12;
+    top: 30%;
+    left: 29%;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+.overlay_box.close {
+    display: none;
+}
+
+.overlay_title h2 {
+    font-size: 2rem;
+    color: var(--color-font-1);
+}
+
+.overlay_paragraph p {
+    font-size: 1.3rem;
+    color: var(--color-font-1);
+    line-height: 2rem;
+}
+
+#overlay_para2 {
+    color: var(--color-font-2);
+}
+
+.overlay_btn {
+    padding: .5rem 2rem;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font: inherit;
+    font-size: 1.2rem;
+    background-color: var(--color-box-3);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color .3s ease;
+}
+
+.overlay_btn:hover,
+.overlay_btn:active {
+    background-color: var(--color-box-4);
+}
+
+@media screen and (max-width: 767px) {
+    /* mobile */
+    .overlay_box {
+        width: 100vw;
+        height: 350px;
+        top: 100px;
+        left: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .overlay_title h2 {
+        font-size: 1.5rem;
+    }
+    
+    .overlay_paragraph p {
+        font-size: 1.3rem;
+        line-height: 2.5rem;
+    }
+
+    .overlay_btn {
+        padding: .5rem 2.5rem;
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    /* tablet */
+    .overlay_box {
+        width: 100vw;
+        height: 600px;
+        top: 300px;
+        left: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .overlay_title h2 {
+        font-size: 3rem;
+    }
+    
+    .overlay_paragraph p {
+        font-size: 2rem;
+        line-height: 2.8rem;
+    }
+
+    .overlay_btn {
+        padding: 1.5rem 4.5rem;
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1410px) {
+    /* pc */
+    .overlay_box {
+        width: 60%;
+        height: 600px;
+        top: 15%;
+        left: 18%;
+    }
+
+    .overlay_title h2 {
+        font-size: 3rem;
+    }
+    
+    .overlay_paragraph p {
+        font-size: 2rem;
+        line-height: 2.8rem;
+    }
+
+    .overlay_btn {
+        padding: 1.5rem 4.5rem;
+        font-size: 2rem;
+    }
+}

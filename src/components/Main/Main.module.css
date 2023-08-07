@@ -1,0 +1,36 @@
+main {
+    width: 100%;
+}
+
+.main_container {
+    width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+    /* mobile */
+    main {
+        width: 100vw;
+        overflow: hidden;
+    }
+    
+    .main_container {
+        width: 100vw;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    /* tablet */
+    main {
+        width: 100vw;
+        overflow: hidden;
+    }
+    
+    .main_container {
+        width: 100vw;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    /* pc */
+
+}

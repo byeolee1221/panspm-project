@@ -1,0 +1,141 @@
+.main_upper_title {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 250px;
+    left: 450px;
+    width: 50%;
+}
+
+.main_upper_title h1 {
+    font-size: 3rem;
+    background: linear-gradient(to left, rgb(254, 44, 84), #4361ee);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    position: absolute;
+    z-index: 9;
+}
+
+.main_upper_title img {
+    position: absolute;
+    left: -60px;
+    top: -120px;
+    transform: rotateZ(-45deg);
+}
+
+#music_icon_bottom {
+    position: absolute;
+    transform: rotateZ(-45deg);
+    top: 55px;
+    left: 700px;
+}
+
+@media screen and (max-width: 500px) {
+    /* mobile */
+    .main_upper_title {
+        position: absolute;
+        top: 200px;
+        left: 40px;
+        width: 90%;
+        margin-top: 5%;
+    }
+
+    .main_upper_title h1 {
+        margin-top: 0;
+        font-size: 1.3rem;
+    }
+
+    .main_upper_title img {
+        width: 40px;
+        left: -30px;
+        top: -70px;
+        transform: rotateZ(-30deg);
+    }
+    
+    #music_icon_bottom {
+        width: 40px;
+        transform: rotateZ(-30deg);
+        top: 20px;
+        left: 300px;
+    }
+}
+
+@media screen and (min-width: 501px) and (max-width: 767px) {
+    /* mobile */
+    .main_upper_title {
+        position: absolute;
+        top: 180px;
+        left: 140px;
+        width: 90%;
+        margin-top: 5%;
+    }
+
+    .main_upper_title h1 {
+        margin-top: 0;
+        font-size: 1.5rem;
+    }
+
+    .main_upper_title img {
+        width: 40px;
+        left: -35px;
+        top: -70px;
+        transform: rotateZ(-45deg);
+    }
+    
+    #music_icon_bottom {
+        width: 40px;
+        transform: rotateZ(-45deg);
+        top: 20px;
+        left: 350px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    /* tablet */
+    .main_upper_title {
+        position: absolute;
+        top: 180px;
+        left: 120px;
+        width: 80%;
+        margin-top: 10%;
+    }
+
+    .main_upper_title h1 {
+        margin-top: 0;
+        font-size: 2.5rem;
+    }
+
+    #music_icon_bottom {
+        top: 30px;
+        left: 580px;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1366px) {
+    /* tablet */
+    .main_upper_title {
+        position: absolute;
+        top: 130px;
+        left: 350px;
+        width: 50%;
+        margin-top: 10%;
+    }
+
+    .main_upper_title h1 {
+        margin-top: 0;
+        font-size: 2.5rem;
+    }
+
+    #music_icon_bottom {
+        top: 30px;
+        left: 580px;
+    }
+}
+
+@media screen and (min-width: 1367px) {
+    /* pc */
+    #music_icon_bottom {
+        left: 690px
+    }
+}

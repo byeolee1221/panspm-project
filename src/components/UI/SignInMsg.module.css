@@ -1,0 +1,142 @@
+.signinMsg {
+    width: 50%;
+    margin: auto;
+    padding: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.signinMsg h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 2.5rem;
+    color: var(--color-font-1);
+}
+
+.signinMsg p {
+    font-size: 1.1rem;
+    margin-top: 10px;
+    margin-bottom: 0;
+    color: var(--color-font-1);
+}
+
+.signinMsg.error p {
+    color: var(--color-font-2);
+}
+
+.signinMsg.success p {
+    color: #4361ee;
+}
+
+.signinMsg button {
+    background-color: var(--color-box-1);
+    border: none;
+    border-radius: 8px;
+    padding: .4rem 1.5rem;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color .3s ease;
+}
+
+.signinMsg button:hover,
+.signinMsg button:active {
+    background-color: #e41e2e;
+}
+
+@media screen and (max-width: 767px) {
+    /* mobile */
+    .signinMsg {
+        width: 80vw;
+        padding: 1rem;
+        font-size: 3rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .signinMsg h2 {
+        margin-top: 150px;
+        font-size: 2.5rem;
+    }
+    
+    .signinMsg p {
+        font-size: 1.5rem;
+        margin-top: 30px;
+    }
+
+    .signinMsg button {
+        padding: 1rem 4rem;
+        font-size: 1.3rem;
+        margin-top: 30px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    /* tablet */
+    .signinMsg {
+        width: 80%;
+        padding: 1rem;
+        font-size: 3rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .signinMsg h2 {
+        margin-top: 300px;
+        font-size: 3.5rem;
+
+    }
+    
+    .signinMsg p {
+        font-size: 2rem;
+        margin-top: 20px;
+    }
+
+    .signinMsg button {
+        padding: 1rem 4.5rem;
+        font-size: 1.8rem;
+        margin-top: 30px;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1365px) {
+    /* tablet */
+    .signinMsg {
+        width: 80%;
+        padding: 1rem;
+        font-size: 3rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .signinMsg h2 {
+        margin-top: 300px;
+        font-size: 3.5rem;
+
+    }
+    
+    .signinMsg p {
+        font-size: 2rem;
+        margin-top: 20px;
+    }
+
+    .signinMsg button {
+        padding: 1rem 4.5rem;
+        font-size: 1.8rem;
+        margin-top: 30px;
+    }
+}
+
