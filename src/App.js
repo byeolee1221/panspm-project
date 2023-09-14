@@ -8,7 +8,6 @@ import SignInMember from "./components/pages/SignInMember";
 import PrivacyTermsPG from "./components/pages/PrivacyTermsPg";
 import TermsOfServicePG from "./components/pages/TermsOfServicePG";
 import MyPagePG from "./components/pages/MyPagePG";
-import PasswordChangePG from "./components/pages/PasswordChangePG";
 import UserExpirePG from "./components/pages/UserExpirePG";
 import { LoginActions } from "./store/LoginSlice";
 
@@ -33,7 +32,6 @@ function App () {
         { path: "privacyTerms", element: <PrivacyTermsPG /> },
         { path: "termsOfService", element: <TermsOfServicePG /> },
         { path: "mypage", element: <MyPagePG /> },
-        { path: "mypage/passwordChange", element: <PasswordChangePG /> },
         { path: "mypage/expire", element: <UserExpirePG /> }
       ]
     }, 
