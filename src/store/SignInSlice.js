@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const SignInSlice = createSlice({
     name: 'signin',
-    initialState: { signinIsVisible: false, backdropIsVisible: false, signInData: [], totalUser: 0, privacyTerms: false, termsOfService: false },
+    initialState: { signinIsVisible: false, backdropIsVisible: false, signInData: [], privacyTerms: false, termsOfService: false },
     reducers: {
         toggle(state) {
             state.signinIsVisible = !state.signinIsVisible;
@@ -13,9 +13,8 @@ const SignInSlice = createSlice({
         addUserData(state, action) {
             const userData = action.payload;
             const existingItem = state.signInData.find((data) => data === userData);
-            console.log(existingItem);
+            // console.log(existingItem);
             if (!existingItem) {
-                state.totalUser++;
                 state.signInData.push({
                     id: userData.id,
                     affiliation: userData.affiliation,

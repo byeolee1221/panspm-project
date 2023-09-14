@@ -13,9 +13,6 @@ const MyPage = () => {
                 <div className={classes.mypage_contents}>
                     <nav className={classes.mypage_nav}>
                         <ul className={classes.nav_list}>
-                            {/* <li>
-                                <Link to="passwordChange">비밀번호 변경</Link>
-                            </li> */}
                             <li>
                                 <Link to="expire">회원탈퇴</Link>
                             </li>

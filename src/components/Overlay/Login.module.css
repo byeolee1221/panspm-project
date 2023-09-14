@@ -64,10 +64,6 @@
     border-radius: 8px;
 }
 
-input:-internal-autofill-selected {
-    background-color: transparent !important;
-}
-
 .password.error,
 .id.error {
     background-color: var(--color-box-1);
