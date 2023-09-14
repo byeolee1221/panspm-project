@@ -4,6 +4,13 @@
 * 제작 계기: 동아리의 오프라인 홍보활동의 한계점을 극복하고, 좀 더 편리한 신입생 모집을 위해 만들게 되었습니다.
 * 제작 기간: 2023.05.31 ~ 2023.08.07 (68일)
 * 제작 인원: 1명 (프론트엔드 - 문창기)
+* 사용 기술스택
+  + 프론트엔드: HTML, CSS, Javascript, React
+  + 데이터베이스: firebase realtime database
+  + 배포 및 호스팅: Github Pages
+
+## Architecture
+![Alt text](/src/assets/panspm.jpg)
 
 ## Pan's PM 동아리 웹사이트가 기여할 수 있는 점
 * 동아리에 관심있었던 사람이 동아리에 대해 신중히 판단할 수 있도록 해주고, 그 이후에 가입원서를 제출할 수 있어서 동아리의 홍보 및 문서업무면에서 효율성을 높여줍니다.
@@ -44,5 +51,10 @@
 * 문제
   + 모바일 화면에서 좌우로 움직일 수 있는 스크롤바가 생기는 문제가 발생함.
 * 해결
-  + header의 margin, padding 부분에도 이상이 없어서 html과 body 태그에 overflow-x: hidden; 속성-값을 추가하여 좌우로 움직이지 않게 함.
+  + html과 body 태그에 overflow-x: hidden; 속성-값을 추가하고, index.html의 meta 데이터에 user-scalable = no를 추가해서 해결함.
+***  
+* 문제
+  + 모바일, 태블릿 화면에서 유저가 input 요소를 누르면 자동으로 확대되어 시야를 방해하게 되는 문제가 발생함.
+* 해결
+  + index.html의 meta 데이터에서 maximum-scale = 1, minimum-scale = 1을 추가해서 해결함.
 ***  
