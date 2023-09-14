@@ -34,7 +34,7 @@ const TermsOfService = () => {
                             아래와 같습니다.
                         </p>
                         <ul className={classes.termsOfService_list}>
-                            <li><Link to="/" className={classes.list_link}>localhost:3000</Link></li>
+                            <li><Link to="/" className={classes.list_link}>https://byeolee1221.github.io/</Link></li>
                         </ul>
                         <p>
                             ② "서비스"라 함은 PAN'S PM의 온라인 활동영역을 넓히고, 새롭게 가입하려는 멤버들의 동아리 접근성을 높이는 서비스입니다. 서비스는 원칙적으로 
